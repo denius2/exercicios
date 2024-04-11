@@ -7,26 +7,17 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    float numero, resultado;
-     printf("digitar o numero: ");
-     scanf("%f", &numero);
-     resultado = sqrt(numero);
-     printf("o resultado da raiz quadrada é: %.3f",resultado);
-     return 0; 
-   printf("numero digitado pelo usuario = %f\n", numero);
-   if (numero >0){
-       printf("positivo");
-   }
-   else if (numero <0){
-       printf("numero invalido");
-   }
+    float fahrenheit, celcius;
+     
+      printf ("digite a temperatura em fahrenheit:");
+      scanf ("%f", &fahrenheit);
+      
+    celcius= (fahrenheit - 32) *5/ 9;
+    printf("a temperatura em celcius é:%.2f\n", celcius);
     
+    return 0;
 }
-
-
-
 

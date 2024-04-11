@@ -8,73 +8,34 @@ Code, Compile, Run and Debug online from anywhere in world.
 *******************************************************************************/
 #include <stdio.h>
 
-int
-main ()
+int main()
 {
-  int mes;
-  printf ("digitar um numero inteiro entre 1 e 12: ");
-  scanf ("%d", &mes);
+    float num1, num2, num3; 
+    
+    printf("digite o primeiro número");
+    scanf("%f",&num1);
+    
+    printf("digite o segundo número");
+    scanf ("%f",&num2);
+    
+    printf("digite o terceiro número");
+    scanf ("%f",&num3);
+    
+  if (num1 >= num2 && num2 >= num3){
+      printf("o maior número é:%.2f\n",num1);
+      
+  } else if (num2 >= num1 && num2 >= num3){
+      printf("o maior numero é:%.2f\n", num2);
+  } else {
+      printf("o maior numero é:%.2f\n",num3);
+  }
   
- switch(mes){
-     
-     case 1:
-     printf("janeiro ");
-     break;
-     
-     case 2:
-     printf("fevereiro ");
-     break;
-     
-     case 3:
-     printf("março ");
-     break;
-     
-     case 4:
-     printf("abril ");
-     break;
-     
-     case 5:
-     printf("maio ");
-     break;
-     
-     case 6:
-     printf("junho ");
-     break;
-     
-     case 7:
-     printf("julho ");
-     break;
-     
-     case 8:
-     printf("agosto ");
-     break;
-     
-     case 9:
-     printf("setembro ");
-     break;
-     
-     case 10:
-     printf("outubro ");
-     break;
-     
-     case 11:
-     printf("novembro ");
-     break;
-     
-     case 12:
-     printf("dezembro ");
-     break;
-     
-     default:
-     printf("não existe essse mes com esse numero /n");
-     break;
- }
- 
-	return 0;
-
+  return 0;
+  
 }
-
-
-
-
+  
+  
+  
+  
+  
 

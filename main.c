@@ -10,52 +10,26 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int codigo;
-    float preco, total;
-    int quantidade;
+    float lado1, lado2, lado3; 
     
-    printf("digite o codigo do produto 100,101,102,103,104,105: ");
-    scanf ("%d", &codigo);
+    printf("digite o comprimento do primeiro lado do triangulo:");
+    scanf("%f",&lado1);
     
+    printf("digite o comprimento do segundo lado do triangulo:");
+    scanf("%f",&lado2);
     
-    switch (codigo) {
-        case 100:
-        preco = 1.20;
-        printf("cachorrao quente de osasco");
-        break;
-        
-        
-        case 101:
-        preco = 1.50;
-        printf("bauru");
-        break;
-        
-        
-        case 102:
-        preco = 2.50;
-        printf("bauru");
-        break;
-        
-        case 103:
-        preco = 3.50;
-        printf("americano");
-        break;
-        
-        case 105:
-        preco = 6.50;
-        printf(" mini pizza 4 queijos");
-        break;
-        
-        default:
-         printf("codigo do produto invalido.\n");
-         return 100;
-         
+    printf("digite o comprimento do terceiro lado do triangulo:");
+    scanf("%f",&lado3);
+    
+    if (lado1 == lado2 && lado2 == lado3){
+        printf("o triangulo é equilatero.\n");
+    }else if (lado1 == lado2 || lado1  == lado3 || lado2 == lado3 ){
+        printf("o triangulo é isósceles.\n");
+    }else{
+        printf("o triaqngulo é escaleno.\n");
     }
-    printf("digite a quantidade desejada: ");
-    scanf("%d", &quantidade);
     
-    total = preco * quantidade;
-    printf("total a ser pago : R$ %.2f\n",total );
     return 0;
+    
 }
 
